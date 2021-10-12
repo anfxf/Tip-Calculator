@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Mono", monospace;
+  /* font-size: 24px; */
+  background: #c5e4e7;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.logo {
+  margin: 4rem 0;
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background: white;
+  border-radius: 1rem;
+}
+.customizeSection,
+.previewSection {
+  width: 45%;
+  height: 90%;
+  /* background: red; */
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: #586866;
+  margin-bottom: 4px;
+}
+.inputFields {
+  position: relative;
+  display: flex;
+}
+.inputFields img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0.5rem;
+}
+.inputFields input {
+  font-size: 24px;
+  padding: 0.1rem;
+  padding-left: 1.4rem;
+  padding-right: 0.6rem;
+  margin-right: 1rem;
+  text-align: right;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid transparent;
+  transition: all 0.1s;
+  color: #0c3635;
+  font-weight: bold;
+}
+.inputFields input:hover,
+.inputFields input:focus {
+  outline: 2px solid #5ca89e;
+}
+
+.inputFields::placeholder {
+  color: #9fb9b7;
+}
+
+.bill,
+.select_Tip,
+.no_of_people {
+  margin-bottom: 0.8rem;
+}
+.select_Tip {
+  display: flex;
+  flex-direction: column;
+}
+
+.button_row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background: green; */
+}
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 35px;
+  margin: 0.4rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: #00474b;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+.buttons button:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+
+.button_row:nth-child(2) button {
+  margin-top: 5px;
+}
+.buttons input {
+  width: 30%;
+  height: 35px;
+  margin: 0.4rem;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 6px;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.buttons input::placeholder {
+  font-size: 0.85rem;
+  color: #617c78;
+  font-weight: bold;
+}
+.buttons input:hover,
+.buttons input:focus {
+  border: 2px solid #4b9d92;
+}
+.previewSection {
+  position: relative;
+  background-color: #00474b;
+  border-radius: 0.6rem;
+}
+.preview_Box {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.amountInfo {
+  flex: 1;
+}
+.amountInfo h3 {
+  font-size: 0.9rem;
+  color: #e0fafa;
+}
+.amountInfo h4 {
+  font-size: 0.75rem;
+  color: #4b8388;
+}
+.result {
+  flex: 1;
+}
+.result h1 {
+  font-size: 2.5rem;
+  color: #24c1ac;
+}
+.resetBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  width: 100%;
+  height: 40px;
+  transform: translateX(-50%);
+}
+.resetBtn button {
+  width: 80%;
+  height: 100%;
+  background-color: #0b6368;
+  outline: none;
+  border: none;
+  color: #003f42;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.resetBtn button:hover {
+  background: #26c2ad;
+  color: #004d4a;
+}
